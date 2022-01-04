@@ -1,0 +1,35 @@
+{
+	"info": {
+		"_postman_id": "c017028f-abf9-49eb-880a-c23c06134e8a",
+		"name": "API2021",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "sign up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\" : \"BOKSHI\",\r\n    \"lastName\" : \"MASUM\",\r\n    \"email\"     : \"BOKSHI7370@gmail.com\",\r\n    \"password\"  : \"123456\",\r\n    \"confirmPassword\"  : \"123456\",\r\n    \"dob\"       : {\r\n        \"year\"      : 2013,\r\n        \"month\"     : 12,\r\n        \"day\"       : 31\r\n    },\r\n    \"gender\"    : \"male\",\r\n    \"agree\"     : true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{NewURL}}api/signup",
+					"host": [
+						"{{NewURL}}api"
+					],
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
